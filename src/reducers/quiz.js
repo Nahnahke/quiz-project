@@ -1,16 +1,27 @@
-import { createSlice } from '@reduxjs/toolkit'
+
+import { createSlice } from '@reduxjs/toolkit';
 
 // Change these to your own questions!
 const questions = [
-  { id: 1, questionText: 'Who set the Olympic record for the 100m dash in 2012?', options: ['Usain Bolt', 'Justin Gatlin', 'Tyson Gay', 'Asafa Powell'], correctAnswerIndex: 0 },
-  { id: 2, questionText: 'When was Michael Phelps last named male World Swimmer of the Year?', options: ['2012', '2014', '2016', '2018'], correctAnswerIndex: 2 }
+  { id: 1, questionText: 'What is the largest mammal in the world?', options: ['African Elephant', 'Blue Whale', 'Giraffe', 'White Rhinoceros'], correctAnswerIndex: 1 },
+  { id: 2, questionText: 'Which is the smallest planet in our solar system?', options: ['Mars', 'Earth', 'Venus', 'Mercury'], correctAnswerIndex: 3 },
+  { id: 3, questionText: 'Which country is known as the Land of the Rising Sun?', options: ['Australia', 'Japan', 'Brazil', 'India'], correctAnswerIndex: 1 },
+  { id: 4, questionText: 'Who is the author of the famous novel "To Kill a Mockingbird"?', options: ['Jane Austen', 'Ernest Hemingway', 'Harper Lee', 'F. Scott Fitzgerald'], correctAnswerIndex: 2 },
+  { id: 5, questionText: 'Which gas is the most abundant in Earth’s atmosphere?', options: ['Oxygen', 'Carbon dioxide', 'Argon', 'Nitrogen'], correctAnswerIndex: 3 },
+  { id: 6, questionText: 'What is the turtle’s scientific name?', options: ['Crustacea', 'Testudines', 'Asteroidea', 'Oreochromis'], correctAnswerIndex: 1 },
+  { id: 7, questionText: 'How long is New Zeeland’s Ninety Mile Beach?', options: ['55 miles', '90 miles', '28 miles', '89 miles'], correctAnswerIndex: 0 },
+  { id: 8, questionText: 'Which European country eats the most chocolate per capita?', options: ['Belgium', 'Sweden', 'Switzerland', 'Belarus'], correctAnswerIndex: 2 },
+  { id: 9, questionText: 'Who composed parts of the soundtrack for the 1994 game Sonic the Hedgehog 3?', options: ['Michael Jackson', 'Sting', 'Dr. Alban', 'Yoko Shimomura'], correctAnswerIndex: 0 },
+  { id: 10, questionText: 'Which country’s national animal is a unicorn?', options: ['Iceland', 'New Zealand', 'Ireland', 'Scotland'], correctAnswerIndex: 3 }
+
 ]
 
 const initialState = {
   questions,
   answers: [],
   currentQuestionIndex: 0,
-  quizOver: false
+  quizOver: false,
+  quizStart: false
 }
 
 export const quiz = createSlice({
@@ -78,7 +89,9 @@ export const quiz = createSlice({
      */
     restart: () => {
       return initialState
+    },
+    startTheQuiz: (state) => {
+      state.quizStart = true
     }
-
   }
 })
