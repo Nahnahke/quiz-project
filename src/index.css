@@ -7,7 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.startpage {
+  background: linear-gradient(360deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+  background: -webkit-linear-gradient(270deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+}
+
+.svg-container {
+  box-shadow: 0 0 10px hsla(5, 100%, 81%, 1);
 }
