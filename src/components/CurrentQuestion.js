@@ -10,7 +10,8 @@ export const CurrentQuestion = () => {
   const store = useSelector((state) => state.quiz);
   const answer = useSelector((state) => state.quiz.answers.find((a) => a.questionId === question.id));
 
-  // console.log('index', index);
+console.log('index', index);
+console.log('store', store);
 
   if (!question) {
     return <h1>Oh no! I could not find the current question!</h1>
