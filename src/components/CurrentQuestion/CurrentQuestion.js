@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import CountDown from 'components/CountDown';
 import { quiz } from '../../reducers/quiz';
 import { Summary } from '../Summary/Summary';
 import './CurrentQuestion.css';
@@ -48,6 +49,7 @@ export const CurrentQuestion = () => {
           <h1>Question: {question.questionText}</h1>
           <p>Question no: {question.id}</p>
           <p>Progress: {question.id} out of {store.questions.length}</p>
+          <CountDown />
           <hr />
         </div>
         <div>
