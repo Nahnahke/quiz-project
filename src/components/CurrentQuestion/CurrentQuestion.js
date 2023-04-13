@@ -2,7 +2,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { quiz } from '../../reducers/quiz';
-import { Summary } from '../Summary';
+import { Summary } from '../Summary/Summary';
 import './CurrentQuestion.css';
 
 export const CurrentQuestion = () => {

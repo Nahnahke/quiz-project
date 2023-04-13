@@ -3,8 +3,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX, faMedal } from '@fortawesome/free-solid-svg-icons';
-import { Counter } from './Counter';
-import { RestartBtn } from './RestartBtn';
+import { Counter } from '../Counter';
+import { RestartBtn } from '../RestartBtn';
 
 import './Summary.css';
 
