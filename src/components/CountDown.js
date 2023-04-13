@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 
 const CountDown = () => {
   const dispatch = useDispatch();
-  const [timeLeft, setTimeLeft] = useState(10);
+  const [timeLeft, setTimeLeft] = useState(60);
 
   useEffect(() => {
     if (timeLeft === 0) {
