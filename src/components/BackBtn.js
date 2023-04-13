@@ -10,13 +10,13 @@ box-shadow: 10px 10px 5px #000;
 border-radius: 5px;
 `
 
-export const RestartBtn = () => {
+export const BackBtn = () => {
   const dispatch = useDispatch()
 
   return (
     <Button
       type="button"
-      className="restartBtn">Back to start
+      className="back-btn"> ← Back to start
       onClick={() => {
         dispatch(quiz.actions.restart())
       }}
