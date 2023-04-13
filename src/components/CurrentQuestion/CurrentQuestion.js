@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-// import CountDown from 'components/CountDown';
+import CountDown from 'components/CountDown';
 import { quiz } from '../../reducers/quiz';
 import { Summary } from '../Summary/Summary';
 import './CurrentQuestion.css';
@@ -52,7 +52,7 @@ export const CurrentQuestion = () => {
           {/* <h1>Question {question.id}</h1> */}
           <h2>{question.questionText}</h2>
           <p>{question.id} / {store.questions.length}</p>
-          {/* <CountDown /> */}
+          <CountDown />
           <div className="button-box">
             {question.options.map((option, index) => (
               <button
