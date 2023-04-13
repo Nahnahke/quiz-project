@@ -44,8 +44,7 @@ export const CurrentQuestion = () => {
   return (
     !quizOver ? (
       <>
-        <div
-          className={`question-${question.id}`}>
+        <div className="current-question">
           <h1>Question: {question.questionText}</h1>
           <p>Question no: {question.id}</p>
           <p>Progress: {question.id} out of {store.questions.length}</p>
@@ -58,6 +57,7 @@ export const CurrentQuestion = () => {
               type="button"
               id={index}
               key={option}
+              name={`question-${question.id}`}
               onClick={() => {
                 onAnswerSubmit(question.id, index)
               }}>

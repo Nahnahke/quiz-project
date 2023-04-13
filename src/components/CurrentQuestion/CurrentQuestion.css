@@ -7,61 +7,41 @@
 }
 
 .question.question-1 {
-    background: linear-gradient(270deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -moz-linear-gradient(270deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -webkit-linear-gradient(270deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    background: linear-gradient(180deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
 .question.question-2 {
-    background: linear-gradient(270deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -moz-linear-gradient(270deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -webkit-linear-gradient(270deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    background: linear-gradient(180deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
 .question.question-3 {
-    background: linear-gradient(270deg, hsla(187, 44%, 78%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -moz-linear-gradient(270deg, hsla(187, 44%, 78%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -webkit-linear-gradient(270deg, hsla(187, 44%, 78%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    background: linear-gradient(180deg, hsla(187, 44%, 78%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
 .question.question-4 {
-    background: linear-gradient(270deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -moz-linear-gradient(270deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -webkit-linear-gradient(270deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    background: linear-gradient(180deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
 .question.question-5 {
-    background: linear-gradient(270deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -moz-linear-gradient(270deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -webkit-linear-gradient(270deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    background: linear-gradient(180deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
 .question.question-6 {
-    background: linear-gradient(270deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -moz-linear-gradient(270deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -webkit-linear-gradient(270deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    background: linear-gradient(180deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
 .question.question-7 {
-    background: linear-gradient(270deg, hsla(187, 44%, 78%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -moz-linear-gradient(270deg, hsla(187, 44%, 78%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -webkit-linear-gradient(270deg, hsla(187, 44%, 78%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    background: linear-gradient(180deg, hsla(187, 44%, 78%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
 .question.question-8 {
-    background: linear-gradient(270deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -moz-linear-gradient(270deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -webkit-linear-gradient(270deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    background: linear-gradient(180deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
 .question.question-9 {
-    background: linear-gradient(270deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -moz-linear-gradient(270deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -webkit-linear-gradient(270deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    background: linear-gradient(180deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
 .question.question-10 {
-    background: linear-gradient(270deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -moz-linear-gradient(270deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-    background: -webkit-linear-gradient(270deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    background: linear-gradient(180deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }

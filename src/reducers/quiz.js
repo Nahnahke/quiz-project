@@ -62,8 +62,7 @@ export const quiz = createSlice({
         answerIndex,
         question,
         answer: question.options[answerIndex],
-        isCorrect: question.correctAnswerIndex === answerIndex,
-        classname: `question-${questionId}`
+        isCorrect: question.correctAnswerIndex === answerIndex
       })
     },
 
