@@ -8,11 +8,10 @@ import { RestartBtn } from './BackBtn';
 
 export const Summary = () => {
   const storeAnswer = useSelector((state) => state.quiz.answers)
-  const storeQuestion = useSelector((state) => state.quiz.questions)
   return (
     <>
       <Counter />
-      {storeAnswer.map((results, index) => {
+      {storeAnswer.map((results) => {
         return (
           <div key={results.questionId}>
             <h1 className="question-title">{results.questionId}</h1>
