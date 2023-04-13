@@ -17,10 +17,11 @@ export const RestartBtn = () => {
   return (
     <Button
       type="button"
-      className="restartBtn">I want to go again!
+      className="restartBtn"
       onClick={() => {
         dispatch(quiz.actions.restart())
-      }}
+      }}>
+  I want to go again!
     </Button>
   )
 }
