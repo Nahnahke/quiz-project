@@ -4,7 +4,7 @@ import { quiz } from '../reducers/quiz';
 
 const CountDown = () => {
   const dispatch = useDispatch();
-  const [timeLeft, setTimeLeft] = useState(30); // Set initial time here
+  const [timeLeft, setTimeLeft] = useState(30);
 
   useEffect(() => {
     if (timeLeft === 0) {
@@ -13,15 +13,12 @@ const CountDown = () => {
       window.location.reload();
     }
 
-    // Exit early when timeLeft reaches 0
     if (!timeLeft) return;
 
-    // Save intervalId to clear the interval when the component unmounts
     const intervalId = setInterval(() => {
       setTimeLeft(timeLeft - 1);
     }, 1000);
 
-    // Clear interval on unmount
     return () => clearInterval(intervalId);
   }, [timeLeft, dispatch]);
 
