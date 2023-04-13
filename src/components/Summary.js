@@ -15,7 +15,8 @@ export const Summary = () => {
       {storeAnswer.map((results, index) => {
         return (
           <div key={results.questionId}>
-            <div className="question-title">{results.questionId}</div>
+            <h1 className="question-title">{results.questionId}</h1>
+            <h2 className="question-text">{results.question.questionText}</h2>
             <p className="your-answer">{results.answers}</p>
             {results.isCorrect ? (
               <FontAwesomeIcon icon={faMedal} />
@@ -24,7 +25,7 @@ export const Summary = () => {
             )}
             {!results.isCorrect && (
               <p className="correct-answer">
-                (Next time answer - {storeQuestion[results.questionId].options[results.question.correctAnswerIndex]})
+                (Next time answer - {results.question.options[results.question.correctAnswerIndex]})
               </p>
             )}
           </div>
