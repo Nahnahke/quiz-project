@@ -57,7 +57,7 @@ export const CurrentQuestion = () => {
               type="button"
               id={index}
               key={option}
-              name={`question-${question.id}`}
+              className={`question-${question.id}`}
               onClick={() => {
                 onAnswerSubmit(question.id, index)
               }}>

@@ -1,6 +1,5 @@
 
 import { createSlice } from '@reduxjs/toolkit';
-import '../components/CurrentQuestion/CurrentQuestion.css';
 
 // Change these to your own questions!
 const questions = [
@@ -63,6 +62,7 @@ export const quiz = createSlice({
         question,
         answer: question.options[answerIndex],
         isCorrect: question.correctAnswerIndex === answerIndex
+        // classname: `question-${questionId}`
       })
     },
 

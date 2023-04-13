@@ -6,42 +6,42 @@
     align-items: center;
 }
 
-.question.question-1 {
+.question-1 {
     background: linear-gradient(180deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
-.question.question-2 {
+.question-2 {
     background: linear-gradient(180deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
-.question.question-3 {
+.question-3 {
     background: linear-gradient(180deg, hsla(187, 44%, 78%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
-.question.question-4 {
+.question-4 {
     background: linear-gradient(180deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
-.question.question-5 {
+.question-5 {
     background: linear-gradient(180deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
-.question.question-6 {
+.question-6 {
     background: linear-gradient(180deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
-.question.question-7 {
+.question-7 {
     background: linear-gradient(180deg, hsla(187, 44%, 78%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
-.question.question-8 {
+.question-8 {
     background: linear-gradient(180deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
-.question.question-9 {
+.question-9 {
     background: linear-gradient(180deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
-.question.question-10 {
+.question-10 {
     background: linear-gradient(180deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
