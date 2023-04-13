@@ -35,19 +35,19 @@ export const CurrentQuestion = () => {
     dispatch(quiz.actions.submitAnswer({ questionId: id, answerIndex: index }))
     if (question.correctAnswerIndex === index) {
       console.log('Answer is correct'); // Log if the selected answer is correct
-      document.getElementById(`${index}`).style.background = 'green'
+      document.getElementById(`${index}`).style.background = '#1C9B82'
     } else {
       console.log('Answer is incorrect'); // Log if the selected answer is incorrect
-      document.getElementById(`${index}`).style.background = 'red'
+      document.getElementById(`${index}`).style.background = '#EC1400'
     }
   }
 
   return (
     !quizOver ? (
       <>
-        <div className="current-question">
+        <div className={`question-${question.id}`}>
           <h1>Question: {question.questionText}</h1>
-          <p>Question no: {question.id}</p>
+          <p>Question: {question.id}</p>
           <p>Progress: {question.id} out of {store.questions.length}</p>
           <CountDown />
           <hr />
@@ -59,7 +59,6 @@ export const CurrentQuestion = () => {
               type="button"
               id={index}
               key={option}
-              className={`question-${question.id}`}
               onClick={() => {
                 onAnswerSubmit(question.id, index)
               }}>
