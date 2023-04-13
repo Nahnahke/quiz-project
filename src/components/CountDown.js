@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { quiz } from '../reducers/quiz';
 
 const CountDown = () => {
   const dispatch = useDispatch();
-  const [timeLeft, setTimeLeft] = useState(60);
+  const [timeLeft, setTimeLeft] = useState(10);
 
   useEffect(() => {
     if (timeLeft === 0) {
       alert('Time is up! Better luck next time!');
-      dispatch(quiz.actions.goToNextQuestion());
       window.location.reload();
     }
 
