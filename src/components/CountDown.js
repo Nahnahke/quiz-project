@@ -4,7 +4,7 @@ import { quiz } from '../reducers/quiz';
 
 const CountDown = () => {
   const dispatch = useDispatch();
-  const [timeLeft, setTimeLeft] = useState(30);
+  const [timeLeft, setTimeLeft] = useState(60);
 
   useEffect(() => {
     if (timeLeft === 0) {
