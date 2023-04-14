@@ -35,10 +35,10 @@ export const CurrentQuestion = () => {
     dispatch(quiz.actions.submitAnswer({ questionId: id, answerIndex: index }))
     if (question.correctAnswerIndex === index) {
       console.log('Answer is correct'); // Log if the selected answer is correct
-      document.getElementById(`${index}`).style.background = '#1C9B82'
+      document.getElementById(`${index}`).style.background = '#84a98c'
     } else {
       console.log('Answer is incorrect'); // Log if the selected answer is incorrect
-      document.getElementById(`${index}`).style.background = '#EC1400'
+      document.getElementById(`${index}`).style.background = '#e76f51'
     }
   }
 
