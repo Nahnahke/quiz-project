@@ -1,8 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import { quiz } from 'reducers/quiz';
 import { CurrentQuestion } from './CurrentQuestion/CurrentQuestion';
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 
 const StyledBackground = styled.div`
   display: flex;
@@ -40,6 +49,7 @@ const StartPageBox = styled.div`
 
 const StartH1 = styled.h1`
   font-size: 32px;
+  animation: ${fadeIn} 1s ease-in;
 
   @media (min-width: 668px) {
     font-size: 38px;
@@ -51,6 +61,7 @@ const StartP = styled.p`
   font-weight: bold;
   text-align:  center;
   margin: 20px;
+  animation: ${fadeIn} 1.5s ease-in;
 
   @media (min-width: 668px) {
     font-size: 20px;
@@ -62,7 +73,7 @@ const StartBtn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35%;
+  width: 40%;
   padding: 5px;
   border-radius: 5%;
   font-size: 16px;
@@ -73,12 +84,15 @@ const StartBtn = styled.button`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   z-index: 999;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: ${fadeIn} 2s ease-in;
 
-    &:hover {
-      -webkit-box-shadow:0px 0px 48px 16px rgba(102,214,192,1);
-      -moz-box-shadow: 0px 0px 48px 16px rgba(102,214,192,1);
-      box-shadow: 0px 0px 48px 16px rgba(102,214,192,1);
-    }
+  &:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 48px 16px rgba(102, 214, 192, 1);
+    -moz-box-shadow: 0px 0px 48px 16px rgba(102, 214, 192, 1);
+    box-shadow: 0px 0px 48px 16px rgba(102, 214, 192, 1);
+  }
 
     &:active {
       background-color; blue;
@@ -109,8 +123,8 @@ export const StartPage = () => {
       <StyledBackground>
         <StartPageBox>
           <StartPageContent>
-            <StartH1>This is a quiz</StartH1>
-            <StartP>This is some text about a quiz</StartP>
+            <StartH1>Fact Frenzy</StartH1>
+            <StartP>A Random Trivia Quiz</StartP>
             <StartBtn type="button" onClick={() => dispatch(quiz.actions.startTheQuiz())}>
             Start quiz
             </StartBtn>
