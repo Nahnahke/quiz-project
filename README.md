@@ -22,4 +22,4 @@ The end result features the following:
 
 NETLIFY LINK HERE
 
-https://gleaming-souffle-e6a61b.netlify.app/
+https://the-fact-frenzy.netlify.app/

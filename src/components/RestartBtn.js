@@ -25,6 +25,7 @@ const StyledRestartBtn = styled.button`
   z-index: 999;
   margin-top: 10px;
   font-family: 'Montserrat', sans-serif;
+  color: #363942;
 
   &:hover {
     transform: scale(1.05);
