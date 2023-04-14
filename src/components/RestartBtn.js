@@ -23,6 +23,13 @@ const StyledRestartBtn = styled.button`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
   position: relative;
   z-index: 999;
+
+  &:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 48px 16px rgba(102, 214, 192, 1);
+    -moz-box-shadow: 0px 0px 48px 16px rgba(102, 214, 192, 1);
+    box-shadow: 0px 0px 48px 16px rgba(102, 214, 192, 1);
+  }
 `
 
 export const RestartBtn = () => {
@@ -41,5 +48,3 @@ export const RestartBtn = () => {
     </ButtonDiv>
   )
 }
-
-// To add: icon or svg
