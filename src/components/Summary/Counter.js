@@ -29,11 +29,18 @@ const StyledWave = styled.svg`
 
 const StyledResultH1 = styled.h1`
   font-size: 30px;
-  margin-bottom: 1rem;
 
   @media (min-width: 668px) {
     font-size: 42px;
-    margin-bottom: 2rem;
+  }
+`;
+
+const StyledResultScore = styled.p`
+  font-size: 20px;
+  margin-bottom: 1rem;
+
+  @media (min-width: 668px) {
+  font-size: 24px;
   }
 `;
 
@@ -63,10 +70,10 @@ export const Counter = () => {
       </StyledWave>
       <StyledResult>
         <StyledResultH1>You got {correctAnswers.length} out of {storeAnswer.length}</StyledResultH1>
+        <StyledResultScore>Score: {score}</StyledResultScore>
         {correctAnswers.length < 4 && (<StyledResultP>Better luck next time!</StyledResultP>)}
         {correctAnswers.length >= 4 && correctAnswers.length < 6 && (<StyledResultP>Not too bad! Practice a little more for next time.</StyledResultP>)}
         {correctAnswers.length >= 7 && (<StyledResultP>You are a star! Excellent trivia skills!</StyledResultP>)}
-        <p>Score: {score}</p>
       </StyledResult>
     </StyledCounter>
   );
