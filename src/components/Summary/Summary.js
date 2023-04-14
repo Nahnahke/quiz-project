@@ -22,6 +22,7 @@ const StyledAnswerWrapper = styled.div`
   padding: 2rem;
   margin-top: 5rem;
 `;
+
 const gradient = (potato) => {
   if ((potato - 1) % 4 === 0) {
     return 'linear-gradient(180deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';

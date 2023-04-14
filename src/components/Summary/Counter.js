@@ -28,6 +28,7 @@ const StyledWave = styled.svg`
 `;
 
 export const Counter = () => {
+  const score = useSelector((store) => store.quiz.score);
   const storeAnswer = useSelector((state) => state.quiz.answers);
   const correctAnswers = storeAnswer.filter((answer) => answer.isCorrect === true);
 
@@ -47,6 +48,7 @@ export const Counter = () => {
         {correctAnswers.length < 4 && (<p>Better luck next time!</p>)}
         {correctAnswers.length >= 4 && correctAnswers.length < 6 && (<p>Not too bad! Practice a little more for next time.</p>)}
         {correctAnswers.length >= 7 && (<p>You are a star! Excellent trivia skills!</p>)}
+        <p>Your score: {score}</p>
       </StyledResult>
     </StyledCounter>
   );
