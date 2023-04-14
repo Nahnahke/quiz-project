@@ -18,7 +18,7 @@ const StartPageContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #5E6472;
+  color: #363942;
 `;
 
 const StartPageBox = styled.div`
@@ -40,30 +40,53 @@ const StartPageBox = styled.div`
 
 const StartH1 = styled.h1`
   font-size: 32px;
+
+  @media (min-width: 668px) {
+    font-size: 38px;
+  }
 `;
 
 const StartP = styled.p`
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
+  text-align:  center;
+  margin: 20px;
+
+  @media (min-width: 668px) {
+    font-size: 20px;
+    margin: 30px;
+  }
 `;
 
 const StartBtn = styled.button`
-  width: 50%;
-  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  padding: 5px;
   border-radius: 5%;
+  font-size: 16px;
   font-weight: bold;
-  text-transform: uppercase;
   background-color: white;
-  color: #5E6472;
+  color: #363942;
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  @media (min-width: 668px) {
+    width: 30%;
+  }
 `;
 
 const StyledWave = styled.svg`
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: auto;
+    height: 35%;
+
+    @media (min-width: 668px) {
+    height: 320px;
+  }
 `;
 
 export const StartPage = () => {
@@ -78,11 +101,11 @@ export const StartPage = () => {
             <StartH1>This is a quiz</StartH1>
             <StartP>This is some text about a quiz</StartP>
             <StartBtn type="button" onClick={() => dispatch(quiz.actions.startTheQuiz())}>
-            Start quiz!
+            Start quiz
             </StartBtn>
           </StartPageContent>
         </StartPageBox>
-        <StyledWave xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <StyledWave xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <path fill="#B8F1E6" fillOpacity="1" d="M0,160L34.3,144C68.6,128,137,96,206,96C274.3,96,343,128,411,160C480,192,549,224,617,208C685.7,192,754,128,823,117.3C891.4,107,960,149,1029,181.3C1097.1,213,1166,235,1234,234.7C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z" />
         </StyledWave>
       </StyledBackground>

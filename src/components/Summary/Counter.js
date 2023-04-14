@@ -7,6 +7,7 @@ const StyledCounter = styled.div`
     background: transparent;
     width: 100%;
     height: 15%;
+    margin-top: 50px;
 `;
 
 const StyledResult = styled.div`

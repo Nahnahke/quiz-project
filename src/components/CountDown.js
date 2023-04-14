@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import styled from 'styled-components';
+
+const StyledCountDown = styled.p`
+    margin-top: 40px;
+`;
 
 const CountDown = () => {
   const dispatch = useDispatch();
@@ -22,7 +27,7 @@ const CountDown = () => {
 
   return (
     <div>
-      <p>Time left: {timeLeft}s</p>
+      <StyledCountDown>Time left: {timeLeft} s</StyledCountDown>
     </div>
   );
 };
