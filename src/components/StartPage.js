@@ -83,9 +83,10 @@ const StyledWave = styled.svg`
     bottom: 0;
     width: 100vw;
     height: 35%;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 
     @media (min-width: 668px) {
-    height: 320px;
+    height: 40%;
   }
 `;
 
