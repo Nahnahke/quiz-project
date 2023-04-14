@@ -4,10 +4,19 @@ import { useDispatch } from 'react-redux';
 import { quiz } from '../reducers/quiz';
 
 const Button = styled.button`
-border: none;
-cursor: pointer;
-box-shadow: 10px 10px 5px #000;
-border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    padding: 10px 15px;
+    font-weight: 500;
+    color: #363942;
+    display: flex;
+    position: absolute;
+    top: 2vh;
+    left: 3vw;
+    gap: 5px;
+    cursor: pointer;
 `
 
 export const BackBtn = () => {
@@ -21,7 +30,7 @@ export const BackBtn = () => {
         dispatch(quiz.actions.restart())
       }}>
       <img src={`${process.env.PUBLIC_URL}/icons/icons8-back-to-50.png`} alt="Back" style={{ width: '20px', height: '20px' }} />
-      Back to start
+          Back to start
     </Button>
   )
 }

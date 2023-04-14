@@ -2,6 +2,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import CountDown from 'components/CountDown';
+import { BackBtn } from 'components/BackBtn';
 import { quiz } from '../../reducers/quiz';
 import { Summary } from '../Summary/Summary';
 import './CurrentQuestion.css';
@@ -52,7 +53,7 @@ export const CurrentQuestion = () => {
     !quizOver ? (
       <div className={`question-${question.id}`}>
         <div className="box">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <svg className="wave-summary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="xMinYMin slice">
             <path fill="current-color" fillOpacity="1" d="M0,192L48,208C96,224,192,256,288,245.3C384,235,480,181,576,149.3C672,117,768,107,864,133.3C960,160,1056,224,1152,234.7C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" />
           </svg>
           {/* <h1>Question {question.id}</h1> */}
@@ -84,13 +85,7 @@ export const CurrentQuestion = () => {
           }}>
             Next question<img src={`${process.env.PUBLIC_URL}/icons/icons8-next-page-50.png`} alt="Next" style={{ width: '20px', height: '20px' }} />
         </button>
-        <button
-          type="button"
-          className="back-btn"
-          onClick={() => {
-            dispatch(quiz.actions.restart())
-          }}>← Back to start
-        </button>
+        <BackBtn />
       </div>
     ) : (
       <Summary />

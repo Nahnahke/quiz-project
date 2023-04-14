@@ -73,6 +73,7 @@
     bottom: 10vh;
     right: 8vw;
     cursor: pointer;
+    gap: 5px;
 }
 .question-1 .back-btn {
     border: none;
