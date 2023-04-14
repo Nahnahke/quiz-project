@@ -45,12 +45,15 @@
     margin-top: 2.3rem;
 }
 .question-1 .answer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: hsla(46, 75%, 92%, 1);
     border: none;
     border-radius: 10px;
     font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
+    font-size: 0.9rem;
+    padding: 10px 25px;
     font-weight: 500;
     color: #363942;
     cursor: pointer;
@@ -108,11 +111,14 @@
     margin-top: 2.3rem;
 }
 .question-2 .answer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffa69e;
     border: none;
     border-radius: 10px;
     font-family: 'Montserrat';
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 10px 15px;
     font-weight: 500;
     color: #363942;
@@ -171,11 +177,14 @@
     margin-top: 2.3rem;
 }
 .question-3 .answer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ADD9DF;
     border: none;
     border-radius: 10px;
     font-family: 'Montserrat';
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 10px 15px;
     font-weight: 500;
     color: #363942;
@@ -234,11 +243,14 @@
     margin-top: 2.3rem;
 }
 .question-4 .answer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #B8F1E6;
     border: none;
     border-radius: 10px;
     font-family: 'Montserrat';
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 10px 15px;
     font-weight: 500;
     color: #363942;
@@ -297,11 +309,14 @@
     margin-top: 2.3rem;
 }
 .question-5 .answer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #FAF3DC;
     border: none;
     border-radius: 10px;
     font-family: 'Montserrat';
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 10px 15px;
     font-weight: 500;
     color: #363942;
@@ -360,11 +375,14 @@
     margin-top: 2.3rem;
 }
 .question-6 .answer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffa69e;
     border: none;
     border-radius: 10px;
     font-family: 'Montserrat';
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 10px 15px;
     font-weight: 500;
     color: #363942;
@@ -423,11 +441,14 @@
     margin-top: 2.3rem;
 }
 .question-7 .answer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ADD9DF;
     border: none;
     border-radius: 10px;
     font-family: 'Montserrat';
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 10px 15px;
     font-weight: 500;
     color: #363942;
@@ -486,11 +507,14 @@
     margin-top: 2.3rem;
 }
 .question-8 .answer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #B8F1E6;
     border: none;
     border-radius: 10px;
     font-family: 'Montserrat';
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 10px 15px;
     font-weight: 500;
     color: #363942;
@@ -549,11 +573,14 @@
     margin-top: 2.3rem;
 }
 .question-9 .answer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #FAF3DC;
     border: none;
     border-radius: 10px;
     font-family: 'Montserrat';
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 10px 15px;
     font-weight: 500;
     color: #363942;
@@ -612,11 +639,14 @@
     margin-top: 2.3rem;
 }
 .question-10 .answer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffa69e;
     border: none;
     border-radius: 10px;
     font-family: 'Montserrat';
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 10px 15px;
     font-weight: 500;
     color: #363942;
