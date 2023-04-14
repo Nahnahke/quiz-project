@@ -22,36 +22,37 @@ const StyledAnswerWrapper = styled.div`
   padding: 2rem;
   margin-top: 5rem;
 `;
+const gradient = (potato) => {
+  if ((potato - 1) % 4 === 0) {
+    return 'linear-gradient(180deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';
+  }
+  if ((potato - 2) % 4 === 0) {
+    return 'linear-gradient(180deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';
+  }
+  if ((potato - 3) % 4 === 0) {
+    return 'linear-gradient(180deg, hsla(187, 44%, 78%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';
+  }
+  if ((potato - 4) % 4 === 0) {
+    return 'linear-gradient(180deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';
+  }
+}
+// 5 % 4 = 1
+// 5 / 4 = 1 and 1/4 rest
+// 9 % 4 = 1
+// 9 / 4 = 2 and (1) <= modulo /4
 
+
+
+// return every 4th for 1, 2, 3, 4
+// 1, 5, 9
+// 2, 6, 10
+// 3, 7, 11,
+// 4, 8, 12
 const StyledSummaryCard = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background: ${(props) => {
-    if (props.questionId === 1) {
-      return 'linear-gradient(180deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';
-    } else if (props.questionId === 2) {
-      return 'linear-gradient(180deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';
-    } else if (props.questionId === 3) {
-      return 'linear-gradient(180deg, hsla(187, 44%, 78%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';
-    } else if (props.questionId === 4) {
-      return 'linear-gradient(180deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';
-    } else if (props.questionId === 5) {
-      return 'linear-gradient(180deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';
-    } else if (props.questionId === 6) {
-      return 'linear-gradient(180deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';
-    } else if (props.questionId === 7) {
-      return 'linear-gradient(180deg, hsla(187, 44%, 78%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';
-    } else if (props.questionId === 8) {
-      return 'linear-gradient(180deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';
-    } else if (props.questionId === 9) {
-      return 'linear-gradient(180deg, hsla(46, 75%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';
-    } else if (props.questionId === 10) {
-      return 'linear-gradient(180deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%)';
-    } else {
-      return 'inherit';
-    }
-  }};
+  background: ${(props) => gradient(props.questionId)};
   width: 320px;
   height: 300px;
   padding: 1rem;
