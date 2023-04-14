@@ -16,12 +16,12 @@ export const BackBtn = () => {
   return (
     <Button
       type="button"
-      className="back-btn"> ← Back to start
+      className="back-btn"
       onClick={() => {
         dispatch(quiz.actions.restart())
-      }}
+      }}>
+      <img src={`${process.env.PUBLIC_URL}/icons/icons8-back-to-50.png`} alt="Back" style={{ width: '20px', height: '20px' }} />
+      Back to start
     </Button>
   )
 }
-
-// To add: icon or svg

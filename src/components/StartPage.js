@@ -72,6 +72,17 @@ const StartBtn = styled.button`
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  z-index: 999;
+
+    &:hover {
+      -webkit-box-shadow:0px 0px 48px 16px rgba(102,214,192,1);
+      -moz-box-shadow: 0px 0px 48px 16px rgba(102,214,192,1);
+      box-shadow: 0px 0px 48px 16px rgba(102,214,192,1);
+    }
+
+    &:active {
+      background-color; blue;
+    }
 
   @media (min-width: 668px) {
     width: 30%;
