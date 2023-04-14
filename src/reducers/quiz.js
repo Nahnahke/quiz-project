@@ -58,7 +58,7 @@ export const quiz = createSlice({
       }
 
       if (question.correctAnswerIndex === answerIndex) {
-        state.score += 5;
+        state.score += 10;
       } else {
         state.score -= 5;
       }
