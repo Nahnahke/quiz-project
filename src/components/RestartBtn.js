@@ -8,16 +8,19 @@ const ButtonDiv = styled.div`
   justify-content: center;
 `;
 
-const Button = styled.button`
+const StyledRestartBtn = styled.button`
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
   border-radius: 5px;
-  border: solid black 1px;
+  border: solid grey 1px;
   padding: 6px 10px;
+  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
   position: relative;
   z-index: 999;
 `
@@ -27,14 +30,14 @@ export const RestartBtn = () => {
 
   return (
     <ButtonDiv>
-      <Button
+      <StyledRestartBtn
         type="button"
         className="restartBtn"
         onClick={() => {
           dispatch(quiz.actions.restart())
         }}>
       Play again
-      </Button>
+      </StyledRestartBtn>
     </ButtonDiv>
   )
 }
