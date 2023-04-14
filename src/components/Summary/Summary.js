@@ -85,6 +85,7 @@ const StyledSummaryCard = styled.div`
 const SummaryCardH1 = styled.h1`
   font-size: 16px;
   text-align: center;
+  font-weight: normal;
 
   @media (min-width: 668px) {
     font-size: 18px;
@@ -98,6 +99,7 @@ const SummaryCardH1 = styled.h1`
 const SummaryCardP = styled.p`
   font-size: 20px;
   text-align: center;
+  font-weight: bold;
 
   @media (min-width: 668px) {
     font-size: 22px;
@@ -109,7 +111,7 @@ const SummaryCardP = styled.p`
 `;
 
 const CorrectAnswerP = styled.p`
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 
   @media (min-width: 668px) {
@@ -117,7 +119,7 @@ const CorrectAnswerP = styled.p`
   }
 
   @media (min-width: 1024px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `;
 

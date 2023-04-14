@@ -46,7 +46,6 @@ const StyledResultP = styled.p`
 `;
 
 export const Counter = () => {
-  const score = useSelector((store) => store.quiz.score);
   const storeAnswer = useSelector((state) => state.quiz.answers);
   const correctAnswers = storeAnswer.filter((answer) => answer.isCorrect === true);
 
