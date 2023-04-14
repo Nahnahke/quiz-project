@@ -21,7 +21,8 @@ const initialState = {
   answers: [],
   currentQuestionIndex: 0,
   quizOver: false,
-  quizStart: false
+  quizStart: false,
+  score: 0
 }
 
 export const quiz = createSlice({
@@ -54,6 +55,17 @@ export const quiz = createSlice({
 
       if (question.options[answerIndex] === undefined) {
         throw new Error(`You passed answerIndex ${answerIndex}, but it is not in the possible answers array!`)
+      }
+
+      if (question.correctAnswerIndex === answerIndex) {
+        state.score += 10;
+      } else {
+        state.score -= 5;
+      }
+
+      if (state.score <= 0) {
+        window.alert('Too many wrong answers, you lose!');
+        window.location.reload();
       }
 
       state.answers.push({

@@ -10,6 +10,7 @@ import './CurrentQuestion.css';
 export const CurrentQuestion = () => {
   const dispatch = useDispatch();
   // We store values from the Redux store in these variables:
+  const score = useSelector((store) => store.quiz.score);
   const question = useSelector((state) => state.quiz.questions[state.quiz.currentQuestionIndex]);
   const store = useSelector((state) => state.quiz);
   const quizOver = useSelector((state) => state.quiz.quizOver);
@@ -59,6 +60,10 @@ export const CurrentQuestion = () => {
           {/* <h1>Question {question.id}</h1> */}
           <h2>{question.questionText}</h2>
           <p>{question.id} / {store.questions.length}</p>
+          <div className="score">
+            {/* The current score is shown here: */}
+            <p>Score: {score}</p>
+          </div>
           <CountDown />
           <div className="button-box">
             {question.options.map((option, index) => (
