@@ -40,7 +40,7 @@ const StyledResultScore = styled.p`
   margin-bottom: 1rem;
 
   @media (min-width: 668px) {
-  font-size: 22px;
+  font-size: 24px;
   }
 `;
 
