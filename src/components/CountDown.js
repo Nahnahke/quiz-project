@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 
 const StyledCountDown = styled.p`
-    margin-top: 40px;
+    margin-top: 80px;
 `;
 
 const CountDown = () => {

@@ -60,10 +60,7 @@ export const CurrentQuestion = () => {
           {/* <h1>Question {question.id}</h1> */}
           <h2>{question.questionText}</h2>
           <p>{question.id} / {store.questions.length}</p>
-          <div className="score">
-            {/* The current score is shown here: */}
-            <p>Score: {score}</p>
-          </div>
+          <p className="score">Score: {score}</p>
           <CountDown />
           <div className="button-box">
             {question.options.map((option, index) => (
