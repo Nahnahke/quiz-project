@@ -64,21 +64,7 @@
     font-weight: 400;
     font-size: 1.2rem;
 }
-.question-1 .next-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    bottom: 10vh;
-    right: 8vw;
-    cursor: pointer;
-    gap: 5px;
-}
+
 .question-1 .back-btn {
     border: none;
     background-color: transparent;
@@ -156,20 +142,7 @@
     font-weight: 400;
     font-size: 1.2rem;
 }
-.question-2 .next-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    bottom: 10vh;
-    right: 8vw;
-    cursor: pointer;
-}
+
 .question-2 .back-btn {
     border: none;
     background-color: transparent;
@@ -247,20 +220,7 @@
     font-weight: 400;
     font-size: 1.2rem;
 }
-.question-3 .next-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    bottom: 10vh;
-    right: 8vw;
-    cursor: pointer;
-}
+
 .question-3 .back-btn {
     border: none;
     background-color: transparent;
@@ -338,20 +298,7 @@
     font-weight: 400;
     font-size: 1.2rem;
 }
-.question-4 .next-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    bottom: 10vh;
-    right: 8vw;
-    cursor: pointer;
-}
+
 .question-4 .back-btn {
     border: none;
     background-color: transparent;
@@ -429,20 +376,7 @@
     font-weight: 400;
     font-size: 1.2rem;
 }
-.question-5 .next-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    bottom: 10vh;
-    right: 8vw;
-    cursor: pointer;
-}
+
 .question-5 .back-btn {
     border: none;
     background-color: transparent;
@@ -520,20 +454,7 @@
     font-weight: 400;
     font-size: 1.2rem;
 }
-.question-6 .next-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    bottom: 10vh;
-    right: 8vw;
-    cursor: pointer;
-}
+
 .question-6 .back-btn {
     border: none;
     background-color: transparent;
@@ -611,20 +532,7 @@
     font-weight: 400;
     font-size: 1.2rem;
 }
-.question-7 .next-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    bottom: 10vh;
-    right: 8vw;
-    cursor: pointer;
-}
+
 .question-7 .back-btn {
     border: none;
     background-color: transparent;
@@ -702,20 +610,7 @@
     font-weight: 400;
     font-size: 1.2rem;
 }
-.question-8 .next-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    bottom: 10vh;
-    right: 8vw;
-    cursor: pointer;
-}
+
 .question-8 .back-btn {
     border: none;
     background-color: transparent;
@@ -793,20 +688,7 @@
     font-weight: 400;
     font-size: 1.2rem;
 }
-.question-9 .next-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    bottom: 10vh;
-    right: 8vw;
-    cursor: pointer;
-}
+
 .question-9 .back-btn {
     border: none;
     background-color: transparent;
@@ -884,20 +766,7 @@
     font-weight: 400;
     font-size: 1.2rem;
 }
-.question-10 .next-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    bottom: 10vh;
-    right: 8vw;
-    cursor: pointer;
-}
+
 .question-10 .back-btn {
     border: none;
     background-color: transparent;

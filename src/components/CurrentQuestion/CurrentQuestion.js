@@ -5,6 +5,7 @@ import CountDown from 'components/CountDown';
 import { BackBtn } from 'components/BackBtn';
 import { quiz } from '../../reducers/quiz';
 import { Summary } from '../Summary/Summary';
+import { NextBtn } from './NextBtn';
 import './CurrentQuestion.css';
 
 export const CurrentQuestion = () => {
@@ -78,15 +79,7 @@ export const CurrentQuestion = () => {
             ))}
           </div>
         </div>
-        <button
-          disabled={!answer} // If answer is empty, disable this button.
-          type="button"
-          className="next-btn"
-          onClick={() => {
-            dispatch(quiz.actions.goToNextQuestion())
-          }}>
-            Next question<img src={`${process.env.PUBLIC_URL}/icons/icons8-next-page-50.png`} alt="Next" style={{ width: '20px', height: '20px' }} />
-        </button>
+        <NextBtn />
         <BackBtn />
       </div>
     ) : (
