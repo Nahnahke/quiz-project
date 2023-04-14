@@ -65,21 +65,6 @@
     font-size: 1.2rem;
 }
 
-.question-1 .back-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    top: 2vh;
-    left: 3vw;
-    cursor: pointer;
-}
-
 /* QUESTION 2 */
 .question-2 {
     background: linear-gradient(180deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
@@ -141,21 +126,6 @@
     justify-content: flex-end;
     font-weight: 400;
     font-size: 1.2rem;
-}
-
-.question-2 .back-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    top: 2vh;
-    left: 3vw;
-    cursor: pointer;
 }
 
 /* QUESTION 3 */
@@ -221,21 +191,6 @@
     font-size: 1.2rem;
 }
 
-.question-3 .back-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    top: 2vh;
-    left: 3vw;
-    cursor: pointer;
-}
-
 /* QUESTION 4 */
 .question-4 {
     background: linear-gradient(180deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
@@ -297,21 +252,6 @@
     justify-content: flex-end;
     font-weight: 400;
     font-size: 1.2rem;
-}
-
-.question-4 .back-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    top: 2vh;
-    left: 3vw;
-    cursor: pointer;
 }
 
 /* QUESTION 5 */
@@ -377,21 +317,6 @@
     font-size: 1.2rem;
 }
 
-.question-5 .back-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    top: 2vh;
-    left: 3vw;
-    cursor: pointer;
-}
-
 /* QUESTION 6 */
 .question-6 {
     background: linear-gradient(180deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
@@ -453,21 +378,6 @@
     justify-content: flex-end;
     font-weight: 400;
     font-size: 1.2rem;
-}
-
-.question-6 .back-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    top: 2vh;
-    left: 3vw;
-    cursor: pointer;
 }
 
 /* QUESTION 7 */
@@ -533,21 +443,6 @@
     font-size: 1.2rem;
 }
 
-.question-7 .back-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    top: 2vh;
-    left: 3vw;
-    cursor: pointer;
-}
-
 /* QUESTION 8 */
 .question-8 {
     background: linear-gradient(180deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
@@ -609,21 +504,6 @@
     justify-content: flex-end;
     font-weight: 400;
     font-size: 1.2rem;
-}
-
-.question-8 .back-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    top: 2vh;
-    left: 3vw;
-    cursor: pointer;
 }
 
 /* QUESTION 9 */
@@ -689,21 +569,6 @@
     font-size: 1.2rem;
 }
 
-.question-9 .back-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    top: 2vh;
-    left: 3vw;
-    cursor: pointer;
-}
-
 /* QUESTION 10 */
 .question-10 {
     background: linear-gradient(180deg, hsla(5, 100%, 81%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
@@ -765,19 +630,4 @@
     justify-content: flex-end;
     font-weight: 400;
     font-size: 1.2rem;
-}
-
-.question-10 .back-btn {
-    border: none;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 10px 15px;
-    font-weight: 500;
-    color: #363942;
-    display: flex;
-    position: absolute;
-    top: 2vh;
-    left: 3vw;
-    cursor: pointer;
 }
