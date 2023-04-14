@@ -10,7 +10,7 @@ const StyledBackground = styled.div`
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: linear-gradient(180deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);  
 `;
 
@@ -105,7 +105,7 @@ export const StartPage = () => {
             </StartBtn>
           </StartPageContent>
         </StartPageBox>
-        <StyledWave xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <StyledWave xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="xMinYMin slice">
           <path fill="#B8F1E6" fillOpacity="1" d="M0,160L34.3,144C68.6,128,137,96,206,96C274.3,96,343,128,411,160C480,192,549,224,617,208C685.7,192,754,128,823,117.3C891.4,107,960,149,1029,181.3C1097.1,213,1166,235,1234,234.7C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z" />
         </StyledWave>
       </StyledBackground>
