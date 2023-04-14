@@ -41,8 +41,6 @@ const gradient = (potato) => {
 // 9 % 4 = 1
 // 9 / 4 = 2 and (1) <= modulo /4
 
-
-
 // return every 4th for 1, 2, 3, 4
 // 1, 5, 9
 // 2, 6, 10
