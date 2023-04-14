@@ -32,14 +32,20 @@ export const CurrentQuestion = () => {
     // console.log('id / question #:', id);
     // console.log('selected answer', question.options[index])
     // console.log('correct?', question.correctAnswerIndex === index)
-    dispatch(quiz.actions.submitAnswer({ questionId: id, answerIndex: index }))
+    dispatch(quiz.actions.submitAnswer({ questionId: id, answerIndex: index }));
+
+    const buttonElement = document.getElementById(`${index}`);
+
     if (question.correctAnswerIndex === index) {
       console.log('Answer is correct'); // Log if the selected answer is correct
-      document.getElementById(`${index}`).style.background = '#84a98c'
+      buttonElement.style.background = '#84a98c';
     } else {
       console.log('Answer is incorrect'); // Log if the selected answer is incorrect
-      document.getElementById(`${index}`).style.background = '#e76f51'
+      buttonElement.style.background = '#e76f51';
     }
+
+    buttonElement.style.fontWeight = 'bold';
+    buttonElement.style.color = 'white';
   }
 
   return (
@@ -76,7 +82,7 @@ export const CurrentQuestion = () => {
           onClick={() => {
             dispatch(quiz.actions.goToNextQuestion())
           }}>
-            Next question →
+            Next question<img src={`${process.env.PUBLIC_URL}/icons/icons8-next-page-50.png`} alt="Next" style={{ width: '20px', height: '20px' }} />
         </button>
         <button
           type="button"
