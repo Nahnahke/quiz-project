@@ -128,10 +128,12 @@ font-style: italic;
 `
 
 export const Summary = () => {
-  const storeAnswer = useSelector((state) => state.quiz.answers)
+  const score = useSelector((store) => store.quiz.score);
+  const storeAnswer = useSelector((state) => state.quiz.answers);
   return (
     <StyledBackground>
       <Counter />
+      <p>Score: {score}</p>
       <RestartBtn />
       <StyledAnswerWrapper>
         {storeAnswer.map((results) => {

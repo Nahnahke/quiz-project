@@ -64,7 +64,7 @@ export const quiz = createSlice({
       }
 
       if (state.score <= 0) {
-        window.alert('Too many wrong answers, you lose!');
+        window.alert('Your score went below 0, you lose!');
         window.location.reload();
       }
 
