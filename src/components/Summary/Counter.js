@@ -46,6 +46,7 @@ const StyledResultP = styled.p`
 `;
 
 export const Counter = () => {
+  const score = useSelector((store) => store.quiz.score);
   const storeAnswer = useSelector((state) => state.quiz.answers);
   const correctAnswers = storeAnswer.filter((answer) => answer.isCorrect === true);
 
@@ -65,6 +66,7 @@ export const Counter = () => {
         {correctAnswers.length < 4 && (<StyledResultP>Better luck next time!</StyledResultP>)}
         {correctAnswers.length >= 4 && correctAnswers.length < 6 && (<StyledResultP>Not too bad! Practice a little more for next time.</StyledResultP>)}
         {correctAnswers.length >= 7 && (<StyledResultP>You are a star! Excellent trivia skills!</StyledResultP>)}
+        <p>Score: {score}</p>
       </StyledResult>
     </StyledCounter>
   );
