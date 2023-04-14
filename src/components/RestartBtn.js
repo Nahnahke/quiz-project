@@ -23,6 +23,8 @@ const StyledRestartBtn = styled.button`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
   position: relative;
   z-index: 999;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
 
   &:hover {
     transform: scale(1.05);

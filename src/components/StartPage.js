@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
@@ -19,8 +20,8 @@ const StyledBackground = styled.div`
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  width: 100%;
-  background: linear-gradient(180deg, hsla(168, 67%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);  
+  width: 100vw;
+  background: url(./images/wave-3.png);
 `;
 
 const StartPageContent = styled.div`
@@ -50,10 +51,16 @@ const StartPageBox = styled.div`
 const StartH1 = styled.h1`
   font-size: 32px;
   animation: ${fadeIn} 1s ease-in;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Playfair Display', serif;
 
   @media (min-width: 668px) {
     font-size: 38px;
-  }
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 `;
 
 const StartP = styled.p`
@@ -74,10 +81,11 @@ const StartBtn = styled.button`
   justify-content: center;
   align-items: center;
   width: 40%;
-  padding: 5px;
-  border-radius: 5%;
-  font-size: 16px;
-  font-weight: bold;
+  padding: 7px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
   background-color: white;
   color: #363942;
   border: none;
@@ -97,22 +105,37 @@ const StartBtn = styled.button`
     &:active {
       background-color; blue;
     }
+`;
+const StartSpan = styled.span`
+  font-size: 52px;
+  margin-top: -10px;
 
   @media (min-width: 668px) {
-    width: 30%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 10px 0 10px;
+    margin: 0;
   }
-`;
+  `;
 
-const StyledWave = styled.svg`
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    height: 35%;
+// const StartCred = styled.p`
+//   font-weight: normal;
+//   position:absolute;
+//   bottom: 3vh;
+//   background: rgba(255, 255, 255, 0.7);
+//   padding: 10px;
+//   border-radius: 15px;`
 
-    @media (min-width: 668px) {
-    height: 40%;
-  }
-`;
+// const StyledWave = styled.svg`
+//     position: absolute;
+//     bottom: 0;
+//     width: 100vw;
+//     height: 35%;
+
+//     @media (min-width: 668px) {
+//     height: 40%;
+//   }
+// `;
 
 export const StartPage = () => {
   const dispatch = useDispatch()
@@ -123,16 +146,17 @@ export const StartPage = () => {
       <StyledBackground>
         <StartPageBox>
           <StartPageContent>
-            <StartH1>Fact Frenzy</StartH1>
+            <StartH1>the <StartSpan>fact</StartSpan> frenzy</StartH1>
             <StartP>A Random Trivia Quiz</StartP>
             <StartBtn type="button" onClick={() => dispatch(quiz.actions.startTheQuiz())}>
-            Start quiz
+            Start Quiz
             </StartBtn>
           </StartPageContent>
         </StartPageBox>
-        <StyledWave xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="xMinYMin slice">
+        {/* <StyledWave xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="xMinYMin slice">
           <path fill="#B8F1E6" fillOpacity="1" d="M0,160L34.3,144C68.6,128,137,96,206,96C274.3,96,343,128,411,160C480,192,549,224,617,208C685.7,192,754,128,823,117.3C891.4,107,960,149,1029,181.3C1097.1,213,1166,235,1234,234.7C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z" />
-        </StyledWave>
+        </StyledWave> */}
+        {/* <StartCred>Quiz made by Camilla Cronqvist, Hannah Ek, Matilda Frid och Sofia Gerdmar</StartCred> */}
       </StyledBackground>
     ) : (
       <CurrentQuestion />

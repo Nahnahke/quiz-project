@@ -73,7 +73,7 @@ const StyledSummaryCard = styled.div`
   @media (min-width: 668px) {
     width: 40%;
     height: 250px;
-    justify-content: flex-start
+    justify-content: flex-start;
   }
 
   @media (min-width: 1024px) {
