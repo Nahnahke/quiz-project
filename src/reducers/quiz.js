@@ -11,7 +11,7 @@ const questions = [
   { id: 6, questionText: "What is the turtle's scientific name?", options: ['Crustacea', 'Testudines', 'Asteroidea', 'Oreochromis'], correctAnswerIndex: 1 },
   { id: 7, questionText: "How long is New Zeeland's Ninety Mile Beach?", options: ['55 miles', '90 miles', '28 miles', '89 miles'], correctAnswerIndex: 0 },
   { id: 8, questionText: 'Which European country eats the most chocolate per capita?', options: ['Belgium', 'Sweden', 'Switzerland', 'Belarus'], correctAnswerIndex: 2 },
-  { id: 9, questionText: 'Who composed the soundtrack for the game Sonic the Hedgehog 3?', options: ['Michael Jackson', 'Sting', 'Dr. Alban', 'Madonna'], correctAnswerIndex: 0 },
+  { id: 9, questionText: 'Who made the soundtrack for the game Sonic the Hedgehog 3?', options: ['Michael Jackson', 'Sting', 'Dr. Alban', 'Madonna'], correctAnswerIndex: 0 },
   { id: 10, questionText: "Which country's national animal is a unicorn?", options: ['Iceland', 'New Zealand', 'Ireland', 'Scotland'], correctAnswerIndex: 3 }
 
 ]
