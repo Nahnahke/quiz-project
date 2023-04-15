@@ -77,8 +77,8 @@ export const CurrentQuestion = () => {
               </button>
             ))}
           </div>
+          <NextBtn />
         </div>
-        <NextBtn />
         <BackBtn />
       </div>
     ) : (
