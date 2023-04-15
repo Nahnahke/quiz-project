@@ -51,7 +51,7 @@ export const Footer = () => {
           Camilla Cronqvist,&nbsp;
         </StyledLink>
         <StyledLink
-          href="https://www.linkedin.com/in/hannah-ek-91667434/"
+          href="https://hannahek.com/"
           target="_blank"
           rel="noopener"
           primary>
