@@ -61,6 +61,7 @@ const StartH1 = styled.h1`
     display: flex;
     flex-direction: row;
     align-items: baseline;
+  }
 `;
 
 const StartP = styled.p`
@@ -101,11 +102,8 @@ const StartBtn = styled.button`
     -moz-box-shadow: 0px 0px 48px 16px rgba(102, 214, 192, 1);
     box-shadow: 0px 0px 48px 16px rgba(102, 214, 192, 1);
   }
-
-    &:active {
-      background-color; blue;
-    }
 `;
+
 const StartSpan = styled.span`
   font-size: 52px;
   margin-top: -10px;
