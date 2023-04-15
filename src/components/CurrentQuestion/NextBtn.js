@@ -14,7 +14,6 @@ const StyledNextBtn = styled.button`
   font-weight: 500;
   color: #363942;
   margin-top: 5%;
-  margin-right: 7%;
   cursor: pointer;
   gap: 5px;
 
@@ -26,7 +25,7 @@ const StyledNextBtn = styled.button`
 
 const NextButtonWrapper = styled.div`
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 `;
 
 export const NextBtn = () => {
