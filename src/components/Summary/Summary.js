@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 import { Counter } from './Counter';
 import { RestartBtn } from '../RestartBtn';
+import { Footer } from './Footer';
 
 const StyledBackground = styled.div`
   height: 100%;
@@ -126,7 +127,7 @@ const CorrectAnswerP = styled.p`
 const CorrectAnswerSpan = styled.span`
 font-style: italic;
 `
-
+/*
 const StyledCred = styled.div`
 font-weight: normal;
 text-align: center;
@@ -152,6 +153,7 @@ const StyledLink = styled.a`
   &:visited {
     color: 'black';
   }`
+  */
 
 export const Summary = () => {
   const storeAnswer = useSelector((state) => state.quiz.answers);
@@ -179,37 +181,7 @@ export const Summary = () => {
           );
         })}
       </StyledAnswerWrapper>
-      <StyledCred>Quiz made by&nbsp;
-        <StyledLink
-          href="https://portfolio-camilla-cronqvist.netlify.app/"
-          target="_blank"
-          rel="noopener"
-          primary>
-            Camilla Cronqvist,&nbsp;
-        </StyledLink>
-        <StyledLink
-          href="https://google.com"
-          target="_blank"
-          rel="noopener"
-          primary>
-            Hannah Ek,&nbsp;
-        </StyledLink>
-        <StyledLink
-          href="https://matilda-frid-portfolio.netlify.app/"
-          target="_blank"
-          rel="noopener"
-          primary>
-            Matilda Frid&nbsp;
-        </StyledLink>
-         and&nbsp;
-        <StyledLink
-          href="https://google.com"
-          target="_blank"
-          rel="noopener"
-          primary>
-            Sofia Gerdmar
-        </StyledLink>
-      </StyledCred>
+      <Footer />
     </StyledBackground>
   )
 }

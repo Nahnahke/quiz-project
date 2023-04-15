@@ -9,6 +9,7 @@ const StyledCounter = styled.div`
   width: 100%;
   height: 15%;
   margin-top: 50px;
+  overflow-x: hidden;
 `;
 
 const StyledResult = styled.div`
@@ -25,6 +26,7 @@ const StyledWave = styled.svg`
   width: 100%;
   height: 50%;
   transform: rotate(180deg);
+  overflow-x: hidden;
 `;
 
 const StyledResultH1 = styled.h1`
