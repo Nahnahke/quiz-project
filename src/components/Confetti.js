@@ -22,5 +22,3 @@ const ConfettiComponent = ({ runConfetti }) => {
 }
 
 export default ConfettiComponent;
-
-// return <Confetti min-width="320px" width="100%" height={window.innerHeight} recycle={false} run={runConfetti} />;
