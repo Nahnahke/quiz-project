@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { quiz } from '../../reducers/quiz';
 
 const StyledNextBtn = styled.button`
+  display: flex;
+  position: relative;
   border: none;
   background-color: transparent;
   font-family: 'Montserrat';
@@ -11,10 +13,7 @@ const StyledNextBtn = styled.button`
   padding: 10px 15px;
   font-weight: 500;
   color: #363942;
-  display: flex;
-  position: absolute;
-  bottom: 10vh;
-  right: 8vw;
+  margin-top: 5%;
   cursor: pointer;
   gap: 5px;
 
@@ -22,6 +21,11 @@ const StyledNextBtn = styled.button`
     cursor: not-allowed;
     opacity: 0.5;
   }
+`;
+
+const NextButtonWrapper = styled.div`
+    display: flex;
+    justify-content: center;
 `;
 
 export const NextBtn = () => {
@@ -32,18 +36,20 @@ export const NextBtn = () => {
   const answer = useSelector((state) => state.quiz.answers.find((a) => a.questionId === question.id));
 
   return (
-    <StyledNextBtn
-      disabled={!answer}
-      type="button"
-      className="next-btn"
-      onClick={() => {
-        dispatch(quiz.actions.goToNextQuestion());
-      }}>
-      {!answer ? 'Choose an answer' : 'Next question'}
-      <img
-        src={`${process.env.PUBLIC_URL}/icons/icons8-next-page-50.png`}
-        alt="Next"
-        style={{ width: '20px', height: '20px' }} />
-    </StyledNextBtn>
+    <NextButtonWrapper>
+      <StyledNextBtn
+        disabled={!answer}
+        type="button"
+        className="next-btn"
+        onClick={() => {
+          dispatch(quiz.actions.goToNextQuestion());
+        }}>
+        {!answer ? 'Choose an answer' : 'Next question'}
+        <img
+          src={`${process.env.PUBLIC_URL}/icons/icons8-next-page-50.png`}
+          alt="Next"
+          style={{ width: '20px', height: '20px' }} />
+      </StyledNextBtn>
+    </NextButtonWrapper>
   );
 };
