@@ -127,6 +127,32 @@ const CorrectAnswerSpan = styled.span`
 font-style: italic;
 `
 
+const StyledCred = styled.div`
+font-weight: normal;
+text-align: center;
+position: relative;
+bottom: 0;
+left: 0;
+background: rgba(255, 255, 255, 0.7);
+padding: 10px;
+border-radius: 15px;
+overflow: hidden;
+margin: 15px auto 5px auto;
+@media (min-width: 668px) {
+  margin: 15px auto 5px auto;
+  }
+`
+
+const StyledLink = styled.a`
+  color: 'black';
+  text-decoration: none;
+  &:hover {
+    font-weight: bold;
+  }
+  &:visited {
+    color: 'black';
+  }`
+
 export const Summary = () => {
   const storeAnswer = useSelector((state) => state.quiz.answers);
   return (
@@ -153,6 +179,37 @@ export const Summary = () => {
           );
         })}
       </StyledAnswerWrapper>
+      <StyledCred>Quiz made by&nbsp;
+        <StyledLink
+          href="https://portfolio-camilla-cronqvist.netlify.app/"
+          target="_blank"
+          rel="noopener"
+          primary>
+            Camilla Cronqvist,&nbsp;
+        </StyledLink>
+        <StyledLink
+          href="https://google.com"
+          target="_blank"
+          rel="noopener"
+          primary>
+            Hannah Ek,&nbsp;
+        </StyledLink>
+        <StyledLink
+          href="https://matilda-frid-portfolio.netlify.app/"
+          target="_blank"
+          rel="noopener"
+          primary>
+            Matilda Frid&nbsp;
+        </StyledLink>
+         and&nbsp;
+        <StyledLink
+          href="https://google.com"
+          target="_blank"
+          rel="noopener"
+          primary>
+            Sofia Gerdmar
+        </StyledLink>
+      </StyledCred>
     </StyledBackground>
   )
 }

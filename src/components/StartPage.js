@@ -60,7 +60,7 @@ const StartH1 = styled.h1`
     font-size: 38px;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: baseline;}
 `;
 
 const StartP = styled.p`
@@ -103,7 +103,7 @@ const StartBtn = styled.button`
   }
 
     &:active {
-      background-color; blue;
+      background-color: blue;
     }
 `;
 const StartSpan = styled.span`
