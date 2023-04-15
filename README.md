@@ -15,11 +15,9 @@ The end result features the following:
 - Progress tracking: The app displays the current question number out of total amount, giving users a sense of progress.
 - Summary screen: After answering all the questions, users are presented with a summary screen that displays the number of correct and incorrect answers they provided. Conditional rendering of elements (e.g. confetti) depending on the outcome.
 - Visually appealing user interface: Styled components with props for the CSS styling.
-- Timer: Countdown timer to complete the quiz. Also a timer showing how long it took the user to complete the quiz.
+- Timer: Countdown timer to complete the quiz. If it counts down to 0, they lose. 
 - Score: We give a score for correct answers and deduct points for incorrect answers. If the user goes below 0, they lose!
 
 ## View it live
-
-NETLIFY LINK HERE
 
 https://the-fact-frenzy.netlify.app/
