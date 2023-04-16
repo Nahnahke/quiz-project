@@ -20,4 +20,4 @@ The end result features the following:
 
 ## View it live
 
-https://the-fact-frenzy.netlify.app/
+https://the-fact-frenzy-quiz.netlify.app/
